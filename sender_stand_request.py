@@ -24,10 +24,10 @@ def get_user_table():
     return requests.get(configuration.URL_SERVICE + configuration.USERS_TABLE_PATH)
 
 
-# response = get_user_table()
+response = get_user_table()
 
-# print(response.status_code)
-# print(response.request)
+print(response.status_code)
+print(response.request)
 
 
 def post_new_user(body):
@@ -46,6 +46,6 @@ def post_products_kits(products_ids):
                          headers=data.headers)
 
 
-response = post_products_kits(data.product_ids);
-print(response.status_code)
-print(response.json())
+#response = post_products_kits(data.product_ids);
+#print(response.status_code)
+#print(response.json())
